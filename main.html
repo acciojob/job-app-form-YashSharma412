@@ -11,6 +11,59 @@
     <script type="text/javascript" src="./script.js">
 </script>
 
+    <section>
+        <form action="/submit" method="post" >
+
+            <label for="name"> Name : 
+                <input type="text" id="name" name="name" placeholder="Full name" required>
+            </label><br><br>
+
+            <label for="email"> Email : 
+                <input type="email" id="email" name="email" placeholder="email" required>
+            </label><br><br>
+
+            <label>Gender : </label> &nbsp; &nbsp;
+            <label for="male"> M 
+                <input type="radio" id="male" name="gender"  required>
+            </label>
+            <label for="female"> F
+                <input type="radio" id="female" name="gender">
+            </label>
+            <label for="other"> F
+                <input type="radio" id="other" name="gender">
+            </label><br><br>
+
+            <label for="laptopBrands"> Laptop : </label>
+                <select id="laptopBrands">
+                    <option value=""></option>
+                    <option value="Apple">Apple</option>
+                    <option value="Asus">Asus</option>
+                    <option value="HP">HP</option>
+                    <option value="Dell">Dell</option>  
+                </select>
+            <br><br>
+
+            <label for="age"> Age : 
+                <input type="number" id="age" name="email" placeholder="Current Age" minlength="18" required>
+            </label><br><br>
+
+            <label for="DOB"> Date : 
+                <input type="date" id="DOB" name="date" required>
+            </label><br><br>
+
+            <label for="password"> Password : 
+                <input type="password" id="password" name="password" placeholder="password" required>
+            </label><br><br>
+
+            <label for="portfolio"> Portfolio : 
+                <input type="url" id="portfolio" name="portfolio" placeholder="Portfolio URL">
+            </label><br><br>
+
+            <input type="submit" value="submit">
+            
+        </form>
+    </section>
+	
 </body>
 
 </html>
